@@ -103,7 +103,6 @@ git submodule status
 
 Save and close.
 
-
 ## Step 4 — Commit and push the docs
 
 Back in PowerShell:
