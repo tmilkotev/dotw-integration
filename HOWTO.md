@@ -27,6 +27,7 @@ git submodule add https://github.com/tosshs/<repo>.git <repo>
 ```
 
 Example:
+
 ```bash
 git submodule add https://github.com/tosshs/dotw-terraform.git dotw-terraform
 ```
