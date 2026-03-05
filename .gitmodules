@@ -16,6 +16,6 @@
 [submodule "dotw-almalinux10wsl"]
 	path = dotw-almalinux10wsl
 	url = https://github.com/tosshs/dotw-almalinux10wsl.git
-[submodule "dotw-openshift"]
-	path = dotw-openshift
-	url = https://github.com/tosshs/dotw-openshift.git
+[submodule "dotw-okd"]
+	path = dotw-okd
+	url = https://github.com/tmilkotev/dotw-okd.git
