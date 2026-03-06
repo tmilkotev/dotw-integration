@@ -19,3 +19,6 @@
 [submodule "dotw-okd"]
 	path = dotw-okd
 	url = https://github.com/tmilkotev/dotw-okd.git
+[submodule "dotw-ansible"]
+	path = dotw-ansible
+	url = https://github.com/tmilkotev/dotw-ansible.git
