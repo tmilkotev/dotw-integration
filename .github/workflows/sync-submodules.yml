@@ -1,9 +1,9 @@
 name: Sync submodules
 
 on:
+  repository_dispatch:
+    types: [submodule-main-updated]
   workflow_dispatch:
-  schedule:
-    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -13,19 +13,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
 
       - name: Update submodules to latest main
-        run: git submodule update --init --remote --recursive
+        run: |
+          git submodule update --init --remote --recursive
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add .
-          git diff --cached --quiet || git commit -m "Sync submodules to latest main"
-          git push
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync submodules to latest main"
+            git push
+          else
+            echo "No submodule updates"
+          fi
