@@ -1,24 +1,32 @@
 [submodule "dotw-ai"]
 	path = dotw-ai
 	url = https://github.com/tmilkotev/dotw-ai.git
+	branch = main
 [submodule "dotw-platformctl"]
 	path = dotw-platformctl
 	url = https://github.com/tmilkotev/dotw-platformctl.git
+	branch = main
 [submodule "dotw-vagrant"]
 	path = dotw-vagrant
 	url = https://github.com/tmilkotev/dotw-vagrant.git
+	branch = main
 [submodule "dotw-workstation-setup"]
 	path = dotw-workstation-setup
 	url = https://github.com/tmilkotev/dotw-workstation-setup.git
+	branch = main
 [submodule "dotw-kubernetes"]
 	path = dotw-kubernetes
 	url = https://github.com/tmilkotev/dotw-kubernetes.git
+	branch = main
 [submodule "dotw-almalinux10wsl"]
 	path = dotw-almalinux10wsl
 	url = https://github.com/tmilkotev/dotw-almalinux10wsl.git
+	branch = main
 [submodule "dotw-okd"]
 	path = dotw-okd
 	url = https://github.com/tmilkotev/dotw-okd.git
+	branch = main
 [submodule "dotw-ansible"]
 	path = dotw-ansible
 	url = https://github.com/tmilkotev/dotw-ansible.git
+	branch = main
