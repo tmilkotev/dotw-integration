@@ -30,3 +30,7 @@
 	path = dotw-ansible
 	url = https://github.com/tmilkotev/dotw-ansible.git
 	branch = main
+[submodule "dotw-terraform"]
+	path = dotw-terraform
+	url = https://github.com/tmilkotev/dotw-terraform.git
+	branch = main
